@@ -13,7 +13,8 @@ export PATH=$PATH:/c/WINDOWS/system32:/c/WINDOWS:/c/WINDOWS/System32/Wbem:/c/WIN
 
 echo msys2 build step 3
 
-cd /c/Users/vagrant
+echo == g drive for data ===
+cd /g
 git clone harbour-core
 git checkout my-master -f
 git pull
