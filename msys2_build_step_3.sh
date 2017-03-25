@@ -15,7 +15,7 @@ echo msys2 build step 3
 
 echo == g drive for data ===
 cd /g
-git clone harbour-core
+git clone https://github.com/hernad/harbour-core.git
 git checkout my-master -f
 git pull
 ./win-make.exe
