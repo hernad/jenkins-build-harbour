@@ -19,5 +19,30 @@ git clone https://github.com/hernad/harbour-core.git
 cd harbour-core
 git checkout my-master -f
 git pull
+
+
+export HB_ARCHITECTURE=win
+export HB_COMPILER=mingw
+
+C_ROOT=C:
+
+
+HB_ROOT=$C_ROOT\\hbwin
+
+export HB_INSTALL_PREFIX=$HB_ROOT
+export HB_INC_INSTALL=$HB_ROOT\\include
+export HB_LIB_INSTALL=$HB_ROOT\\lib
+
+#export HB_WITH_MYSQL=c:\\mysql\\include
+#export HB_WITH_QT=c:\\Qt\\$QT_VER\\mingw$MINGW_VER\\include
+#export PATH=$MSYS2\\bin:$PATH
+#export MSYS2=c:\\msys32\\mingw32
+#export HB_WITH_PGSQL=$MSYS2\\include
+#export HB_WITH_OPENSSL=$MSYS2\\include
+
+#export PATH=/c/msys32/mingw32/bin:$HB_ROOT\\bin:$PATH
+#HB_DBG=`cygpath -d $PWD`
+
+
 ./win-make.exe
 
