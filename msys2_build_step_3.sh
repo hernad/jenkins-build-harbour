@@ -53,5 +53,5 @@ export HB_WITH_QT=no
 ./win-make.install
 cd /c/
 tar cvfz hbwin.tar.gz hbwin
-cdp hbwin.tar.gz //vboxsrv/vagrant/
+cp hbwin.tar.gz //vboxsrv/vagrant/
 
