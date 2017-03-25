@@ -13,6 +13,11 @@ export PATH=$PATH:/c/WINDOWS/system32:/c/WINDOWS:/c/WINDOWS/System32/Wbem:/c/WIN
 
 echo msys2 build step 3
 
+
+
+cd /c
+rm -rf hbwin
+
 echo == g drive for data ===
 cd /g
 git clone https://github.com/hernad/harbour-core.git
@@ -45,4 +50,9 @@ export HB_LIB_INSTALL=$HB_ROOT\\lib
 
 
 ./win-make.exe
+
+./win-make.install
+cd /c/
+tar cvfz hbwin.tar.gz hbwin
+cdp hbwin.tar.gz //vboxsrv/vagrant/
 
