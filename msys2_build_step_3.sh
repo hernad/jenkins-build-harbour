@@ -50,7 +50,7 @@ export HB_LIB_INSTALL=$HB_ROOT\\lib
 export HB_WITH_QT=no
 ./win-make.exe
 
-./win-make.install
+./win-make.exe install
 cd /c/
 tar cvfz hbwin.tar.gz hbwin
 cp hbwin.tar.gz //vboxsrv/vagrant/
