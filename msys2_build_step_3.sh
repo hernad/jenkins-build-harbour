@@ -14,7 +14,6 @@ export PATH=$PATH:/c/WINDOWS/system32:/c/WINDOWS:/c/WINDOWS/System32/Wbem:/c/WIN
 echo msys2 build step 3
 
 
-
 cd /c
 rm -rf hbwin
 
@@ -48,7 +47,7 @@ export HB_LIB_INSTALL=$HB_ROOT\\lib
 #export PATH=/c/msys32/mingw32/bin:$HB_ROOT\\bin:$PATH
 #HB_DBG=`cygpath -d $PWD`
 
-
+export HB_WITH_QT=no
 ./win-make.exe
 
 ./win-make.install
