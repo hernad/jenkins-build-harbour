@@ -6,7 +6,7 @@ DOWNLOADS_DIR=/data_0/f18-downloads_0/downloads.bring.out.ba/www/files/
 
 [ -f data.vmdk ] || VBoxManage clonehd ~/data_core_base_windows.vmdk data.vmdk
 
-[ -f hbwin.tar.gz ] && rm harbour.tar.gz
+[ -f $FILE.tar.gz ] && rm $FILE.tar.gz
 
 vagrant --version
 vagrant up --provision
