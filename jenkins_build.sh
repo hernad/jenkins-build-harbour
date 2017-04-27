@@ -1,12 +1,13 @@
 #!/bin/bash
 
 SSH_DOWNLOAD_SERVER=docker@192.168.168.171
-FILE="hbwin.tar.gz"
+FILE="hb_linux_i386.tar.gz"
 DOWNLOADS_DIR=/data_0/f18-downloads_0/downloads.bring.out.ba/www/files/
 
-[ -f data.vmdk ] || VBoxManage clonehd ~/data_core_base_windows.vmdk data.vmdk
+./prepare_build.sh
 
 [ -f $FILE ] && rm $FILE
+
 
 vagrant --version
 vagrant up --provision
