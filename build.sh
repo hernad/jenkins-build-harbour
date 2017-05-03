@@ -31,9 +31,9 @@ git checkout my-master -f
 git pull
 
 
-echo ======== /data/build/hb-linux-i386 =====================
+echo ======== /data/build/hb-linux =====================
 export HB_INSTALL_PREFIX=/data/build/hb-linux
-make
+make clean
 make install
 
 cd /data/build
