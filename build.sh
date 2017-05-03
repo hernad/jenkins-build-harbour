@@ -27,6 +27,8 @@ cd /data/build
 
 git clone https://github.com/hernad/harbour-core.git
 cd harbour-core
+# clean state
+rm -rf *
 git checkout my-master -f
 git pull
 
