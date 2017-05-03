@@ -1,5 +1,6 @@
 #!/bin/bash
 
+
 echo ======== mount /data =====================
 [ -d /data ]  || mkdir -p /data
 
@@ -9,9 +10,9 @@ else
    echo /data mounted
 fi
 
-
-sudo apt-get update -y
-sudo apt-get install build-essentials flex bison libpq-dev -y
+echo ========= install dev deps ==========================
+sudo apt-get -y update
+sudo apt-get -y install build-essentials flex bison libpq-dev
 
 
 echo ======== /data/build =====================
@@ -36,3 +37,5 @@ export HB_INSTALL_PREFIX=/data/build/hb-linux-i386
 make
 make install
 
+cd /data/build
+tar cvfz /vagrant/hb-linux-i386.tar.gz hb-linux-i386
