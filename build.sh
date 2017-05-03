@@ -12,7 +12,7 @@ fi
 
 echo ========= install dev deps ==========================
 sudo apt-get -y update
-sudo apt-get -y install build-essentials flex bison libpq-dev
+sudo apt-get -y install build-essential flex bison libpq-dev
 
 
 echo ======== /data/build =====================
