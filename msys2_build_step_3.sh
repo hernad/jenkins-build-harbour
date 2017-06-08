@@ -15,6 +15,7 @@ export MSYS2='c:\msys32\mingw32'
 
 echo msys2 build step 3
 
+pacman --noconfirm -Sy mingw-w64-i686-curl
 
 cd /c
 rm -rf hbwin
