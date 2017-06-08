@@ -27,7 +27,7 @@ cd harbour-core
 git checkout my-master -f
 git pull
 
-
+export HB_WITH_CURL='c:\msys32\mingw32\include'
 export HB_WITH_OPENSSL='c:\msys32\mingw32\include'
 export HB_WITH_PGSQL='c:\msys32\mingw32\include'
 export HB_ARCHITECTURE=win
